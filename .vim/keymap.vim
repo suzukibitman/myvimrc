@@ -22,8 +22,13 @@ nmap <C-e> :NERDTreeToggle<CR>
 nmap <f2> :bp<CR>
 nmap <f3> :bn<CR>
 nmap <f4> :vs<CR>
-nmap <f5> :source %<CR>
+"nmap <f5> :source %<CR>
+nmap <f5> :!perl % <CR> 
+nmap <f6> :echo expand("%:p")<CR>
+nmap <f8> :!bash<CR>
+nmap <f12> :bd %<CR>
 nmap <C-g> :vim 
+nmap <C-j> :set relativenumber<CR>
 inoremap <silent> jj <ESC>
 
 

@@ -19,7 +19,7 @@
   NeoBundle 'scrooloose/nerdtree'
   NeoBundle 'jacoborus/tender.vim'
   NeoBundle 'petdance/vim-perl'
-  NeoBundle 'hotchpotch/perldoc-vim'
+  "NeoBundle 'hotchpotch/perldoc-vim'
   NeoBundle 'thinca/vim-quickrun'
   NeoBundle 'romainl/Apprentice'
   NeoBundle 'szw/vim-tags'
@@ -27,12 +27,16 @@
   NeoBundle 'cohama/lexima.vim'
   NeoBundle 'tyru/current-func-info.vim'
   NeoBundle 'vim-airline/vim-airline'
+  NeoBundle 'tpope/vim-fugitive'
   "-----------------------------------------
   "colorscheme
   "-----------------------------------------
   NeoBundle 'Haron-Prime/Antares'
   NeoBundle 'jacoborus/tender.vim'
   NeoBundle 'tomasr/molokai'
+  NeoBundle 'tpope/vim-fugitive'
+  NeoBundle "osyo-manga/vim-brightest"
+
 
 "  NeoBundle 'plasticboy/vim-markdown'
 "  NeoBundle 'kanokanno/previm'
