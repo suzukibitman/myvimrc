@@ -92,12 +92,12 @@ set noerrorbells "エラーメッセージの表示時にビープを鳴らさ�
 
 if filereadable(expand('~/.vim/neo.vim'))
     source ~/.vim/neo.vim
+	colorscheme antares
+	colorscheme tender
 else
     echo "no neobundle_config"
 endif
 
-colorscheme antares
-colorscheme tender
 
 "tlistに関する設定
 let Tlist_Use_Right_Window=1

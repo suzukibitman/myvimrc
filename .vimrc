@@ -2,8 +2,14 @@
 "　include the .vim files
 "-------------------------------------
 
-if filereadable(expand('~/.vim/neo.vim'))
-	source ~/.vim/neo.vim
+"if filereadable(expand('~/.vim/neo.vim'))
+"	source ~/.vim/neo.vim
+"else
+"	echo "no neobundle_config"
+"endif
+
+if filereadable(expand('~/.vim/dein.vim'))
+	source ~/.vim/dein.vim
 else
 	echo "no neobundle_config"
 endif
@@ -11,7 +17,7 @@ endif
 if filereadable(expand('~/.vim/keymap.vim'))
 	source ~/.vim/keymap.vim
 else
-	echo "no keymao.vim"
+	echo "no keymap.vim"
 endif
 
 if filereadable(expand('~/.vim/func.vim'))
@@ -30,33 +36,6 @@ colorscheme molokai
 "tlistに関する設定
 let Tlist_Use_Right_Window=1
 
-" may sometime will use.... maybenot
-" https://vim-jp.org/vim-users-jp/2010/09/02/Hack-171.html
-" ファイル名表示
-":wqset statusline=%F
-"" 現在の関数名表示
-"let &statusline .= ' : %{cfi#get_func_name() == "" ? "no function" :  "". cfi#get_func_name() . "()"}'
-"let w:airline_section_b =' : %{cfi#get_func_name() == "" ? "no function" :  "". cfi#get_func_name() . "()"}'
-"" 変更チェック表示
-"let &statusline .= '%m'
-"" 読み込み専用かどうか表示
-"set statusline+=%r
-"" ヘルプページなら[HELP]と表示
-"set statusline+=%h
-"" プレビューウインドウなら[Prevew]と表示
-"set statusline+=%w
-"" これ以降は右寄せ表示
-"set statusline+=%=
-"" file encoding
-"set statusline+=%{&fileencoding}
-"" 現在行数/全行数
-"set statusline+=[LINE=%l/%L]
-"" ステータスラインを常に表示(0:表示しない、1:2つ以上ウィンドウがある時だけ表示)
-"set laststatus=2
-"
-""TODO:secsion,unite,pwoerline customise,dictionnnalry(for mac)
-"let g:airline_left_sep='>'
-"let g:airline_left_sep=' : %{cfi#get_func_name() == "" ? "no function" :  "". cfi#get_func_name() . "()"}'
 set number         " 行番号を表示する
 set cursorline     " カーソル行の背景色を変える
 "set cursorcolumn   " カーソル位置のカラムの背景色を変える
@@ -134,7 +113,6 @@ set history=1000
 "ビープ音すべてを無効にする
 "set visualbell t_vb=
 "set noerrorbells "エラーメッセージの表示時にビープを鳴らさない
-
 "2017/06/18追加　参照http://qiita.com/iwaseasahi/items/93db781ef08bcdb15004 
 ""note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
