@@ -29,9 +29,9 @@ endif
 "-------------------------------------
 "colorscheme
 "-------------------------------------
-"colorscheme antares
+colorscheme antares
 "colorscheme tender
-colorscheme molokai
+"colorscheme molokai
 
 "tlistに関する設定
 let Tlist_Use_Right_Window=1
@@ -120,3 +120,12 @@ if 0 | endif
 if &compatible
 	set nocompatible               " Be iMproved
 endif
+" debug 
+packadd termdebug
+
+set splitbelow
+
+let g:termdebug_wide = 120
+set mouse =a
+let g:termdebug_use_prompt = 1
+
