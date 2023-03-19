@@ -23,11 +23,12 @@ endif
 "-------------------------------------
 "colorscheme
 "-------------------------------------
-colorscheme antares
+"colorscheme antares
 "colorscheme tender
 "colorscheme molokai
 "colorscheme mornning
 "colorscheme inkstained
+colorscheme darkblue
 "tlistに関する設定
 let Tlist_Use_Right_Window=1
 
