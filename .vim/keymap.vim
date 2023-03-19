@@ -13,7 +13,6 @@ nnoremap <silent> tm :<C-u>call <SID>MoveToNewTab()<CR>
 nnoremap <space>f :echo cfi#format("%s", "")<CR>
 nnoremap <Space>t :<C-u>tab help<Space>
 nnoremap <Space>v :<C-u>vertical belowright help<Space>
-nnoremap <silent> tt :terminal<CR>
 "----------------------------------------------------
 "map
 "----------------------------------------------------
@@ -23,16 +22,17 @@ nmap <C-e> :NERDTreeToggle<CR>
 nmap <f2> :bp<CR>
 nmap <f3> :bn<CR>
 nmap <f4> :vs<CR>
-nmap <f5> :source %<CR>
-"nmap <f5> :!perl % <CR> 
+"nmap <f5> :source %<CR>
+nmap <f5> :!python3 % <CR> 
 nmap <f6> :echo expand("%:p")<CR>
 nmap <f8> :!bash<CR>
+nmap <f11> :q<CR>
 nmap <f12> :bd %<CR>
-nmap <C-g> :Ag
-"nmap <C-j> :set relativenumber<CR>
-nmap <C-j> :set relativenumber!<CR>
+"nmap <C-g> :vim
+nmap <C-g> :vim  \| cw <s-Left><s-Left>
+nmap <C-k> :vim  <C-r>0 \| cw <s-Left><s-Left>
+nmap <C-j> :set relativenumber<CR>
 inoremap <silent> jj <ESC>
-map ,w :call TermDebugSendCommand('where')<CR>
 
 
  " let g:airline_left_sep='>'
